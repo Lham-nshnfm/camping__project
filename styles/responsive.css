@@ -1,7 +1,11 @@
 @media(max-width: 380px) {
-    
+
     .header-content__title {
         font-size: 4rem;
+    }
+
+    .newsletter__title {
+        max-width: 20rem;
     }
 }
 
@@ -9,12 +13,27 @@
 
 @media (min-width: 768px) {
 
-    .nav__btn, .mobile-nav-menu {
+    .nav__btn,
+    .mobile-nav-menu {
         display: none;
     }
 
     .menu {
         display: flex;
+    }
+
+    .newsletter {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .newsletter__content {
+        padding-right: 2.5rem;
+    }
+
+    .newsletter__title {
+        margin-bottom: .5rem;
     }
 }
 
@@ -23,8 +42,35 @@
         display: flex;
     }
 
+    .header-content__caption {
+        max-width: 50rem;
+    }
+
+
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .newsletter {
+        padding-inline: 3rem;
+    }
 
-@media (min-width: 1400px) {}
+    .newsletter__content {
+        flex-basis: auto;
+        width: 60rem;
+    }
+
+    .newsletter__caption{
+        max-width: 48rem;
+    }
+
+    .newsletter__banner {
+        flex-basis: auto;
+        width: 40rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .newsletter {
+        padding: 3rem 6rem;
+    }
+}
